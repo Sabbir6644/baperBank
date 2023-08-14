@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bank</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <section class="bg-orange-300 py-12">
+          <h2 class="text-5xl text-center"> Let's get some <span class="text-violet-500">Mooooooney!!!</span> </h2>
+     <div class="flex justify-around flex-wrap my-4">
+          <div class="bg-green-400 text-white py-3 px-5">
+               <h2 class="text-2xl">Deposit</h2>
+               <h3 class="text-2xl">$<span id="deposit">00</span> </h3>
+
+          </div>
+
+          <div class="bg-purple-400 text-white py-3 px-5">
+               <h2 class="text-2xl">Withdraw</h2>
+               <h3 class="text-2xl">$<span id="withdraw">00</span> </h3>
+
+          </div>
+
+          <div class="bg-blue-400 text-white py-3 px-5">
+               <h2 class="text-2xl">Balance</h2>
+               <h3 class="text-2xl">$<span id="balance">1240</span> </h3>
+
+          </div>
+
+     </div>
+
+     <div class="flex gap-5 flex-wrap w-11/12 mx-auto">
+          <div class="bg-indigo-400 py-3 px-3 flex-1">
+               <h3 class="text-xl text-white"> Please Deposit</h3>
+               <input id="deposit-input" class=" w-4/5 block mb-3 px-3 my-1" type="text" placeholder="Enter Your Deposit Money">
+               <button id="deposit-btn" class=" bg-red-300 py-2 px-4 text-white">Deposit</button>
+          </div>
+
+          <div class="bg-lime-400 py-3 px-3 flex-1">
+               <h3 class="text-xl text-white"> Please Withdraw</h3>
+               <input id="withdraw-input" class=" w-4/5 my-1 block mb-3 px-3" type="text" placeholder="Enter Your Deposit Money">
+               <button id="withdraw-btn" class=" bg-red-300 py-2 px-4 text-white">Withdraw</button>
+          </div>
+     </div>
+     
+     </section>
+     <script src="javascript/bank.js"></script>
+</body>
+</html>
